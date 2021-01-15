@@ -18,7 +18,7 @@ def meaning_of(word):
         elif confirmation_msg == "N":
             pass
         else:
-            print("Sorry that response is not recognised, Please respond with Y (Yes) or N (No)")
+            print ("Sorry that response is not recognised, Please respond with Y (Yes) or N (No)")
             confirmation_msg = input(f"Did you mean '{get_close_matches(word, data.keys())[0]}'? Enter Y if Yes, N if No: ")
     else:
         return f"{message}"
