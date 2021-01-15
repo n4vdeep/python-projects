@@ -16,10 +16,9 @@ def meaning_of(word):
         if confirmation_msg == "Y":
             return data[get_close_matches(word, data.keys())[0]]
         elif confirmation_msg == "N":
-            pass
+            return 'That word does not exist. Please double check it'
         else:
-            print ("Sorry that response is not recognised, Please respond with Y (Yes) or N (No)")
-            confirmation_msg = input(f"Did you mean '{get_close_matches(word, data.keys())[0]}'? Enter Y if Yes, N if No: ")
+            return "Sorry that response is not recognised"
     else:
         return f"{message}"
 
